@@ -2,13 +2,10 @@
 
 @section('content')
     <main>
-        <h1>Sito di anto</h1>
-        <div class="container">
-            <div class="row">
-
+        <div class="container my-4">
+            <div class="row row row-cols-1 row-cols-md-3 g-4">
                 @foreach ($movies as $movie)
                     <div class="col-md-4 g-4">
-
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><strong>Title : </strong>{{ $movie->title }}</h5>
@@ -18,12 +15,9 @@
                                 <p class="card-text"><strong>Vote: </strong>{{ $movie->vote }}</p>
                             </div>
                         </div>
-
                     </div>
                 @endforeach
-
             </div>
-
         </div>
     </main>
 @endsection
