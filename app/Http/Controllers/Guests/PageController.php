@@ -19,13 +19,13 @@ class PageController extends Controller
     public function features()
     {
 
-        return view('features');     //con questo controllo io reindirizzo il controllo alla pagina welcome
+        return view('features');     
     }
 
     public function pricing()
     {
 
 
-        return view('pricing');     //con questo controllo io reindirizzo il controllo alla pagina welcome
+        return view('pricing');    
     }
 }
