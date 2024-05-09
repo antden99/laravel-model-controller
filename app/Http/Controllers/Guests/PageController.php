@@ -7,5 +7,7 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    //
+    public function index(){
+        return view('home');     //con questo controllo io reindirizzo il controllo alla pagina welcome
+    }
 }
